@@ -1,5 +1,5 @@
-const greetUser = (userName) => {
-    console.log('Hi there' + ' ' + userName);
+const greetUser = (greetingPrefix, userName = 'user') => {
+    console.log(greetingPrefix + " " + userName);
 }
 
-greetUser('beata');
+greetUser('hi');
