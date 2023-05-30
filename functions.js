@@ -4,7 +4,7 @@ const greetUser = (greetingPrefix, userName = 'user') => {
 
 greetUser('hi');
 
-function sumUp(numbers) {
+function sumUp(...numbers) {
     let result = 0;
 
     for(const number of numbers) {
@@ -14,4 +14,6 @@ function sumUp(numbers) {
     return result
 }
 
-console.log(sumUp([1,2,5,5,6]));
+const inputNumbers = [1, 2, 5, 5, 6];
+
+console.log(sumUp(...inputNumbers));
