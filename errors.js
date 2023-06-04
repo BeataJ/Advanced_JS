@@ -1,7 +1,12 @@
 const fs = require('fs');
 
 function readFile() {
-    const fileData = fs.readFile('data.json');
+   try {
+    const fileData = fs.readFileSync('data.json');
+   } catch {
+    console.log('An error occurred!');
+   }
+    
     console.log('Hi there!');
 }
 
