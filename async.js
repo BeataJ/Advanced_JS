@@ -1,10 +1,13 @@
 const fs = require("fs");
 
 function readFile() {
+    let fileData;
  
-    const fileData = fs.readFileSync("data.json");
+    fs.readFile("data.txt", (error, fileData)=> {
+        console.log('File parsing done!');
+        console.log(fileData.toString());
+    });
   
-    console.log("An error occurred!");
   
 
   console.log("Hi there!");
