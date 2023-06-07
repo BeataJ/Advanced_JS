@@ -12,7 +12,9 @@ function readFile() {
     .then((fileData)=> {
       console.log("File parsing done!");
       console.log(fileData.toString());
-    });
+      // return anotherAsyncOperation
+    })
+    .then(()=> {});
 
   console.log("Hi there!");
 }
