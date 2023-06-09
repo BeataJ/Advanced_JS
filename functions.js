@@ -19,4 +19,4 @@ const inputNumbers = [1, 2, 5, 5, 6];
 
 console.log(sumUp(...inputNumbers));
 
-console.log(sumUp);
+console.log(sumUp(1, 2, 5, 5, 6));
